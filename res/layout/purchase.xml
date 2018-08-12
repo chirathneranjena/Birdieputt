@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="10dp" >
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvText1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:textColor="#0099CC"
+        android:gravity="center"
+        android:text="Like to keep tracking more shots? Keep a record of your best shots and show them off to your friends! See where you have problems on the course and fix it!" />
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="10dp" >
+    </LinearLayout>
+    
+    <TextView
+        android:id="@+id/tvText2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:textSize="16dp"
+         android:textColor="#0099CC"
+        android:gravity="center"
+        android:text="Get unlimited shot tracking on Burdieputt now!"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="10dp" >
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/bPurchase"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Purchase" />
+
+</LinearLayout>

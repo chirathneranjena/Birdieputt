@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!--
+         <item
+        android:id="@+id/menu_putt"
+        android:icon="@drawable/ic_action_putt"
+        android:orderInCategory="0"
+        android:showAsAction="ifRoom"
+        android:title="@string/menu_putt"/>
+    
+        <item
+        android:id="@+id/menu_perspective"
+        android:icon="@drawable/ic_action_perspective"
+        android:orderInCategory="0"
+        android:showAsAction="ifRoom"
+        android:title="@string/menu_perspective"/>
+    -->
+
+</menu>

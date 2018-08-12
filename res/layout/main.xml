@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="4dp"
+            android:weightSum="100" >
+
+            <!-- android:paddingTop="4dp" -->
+
+            <TextView
+                android:id="@+id/tvDistance"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="20"
+                android:gravity="center_vertical"
+                android:textColor="#333333"
+                android:text="@string/tvDistance_text"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/tvAccuracy"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="20"
+                android:gravity="center_vertical"
+                 android:textColor="#333333"
+                android:text="@string/tvAccuracy_text"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="60"
+                android:gravity="right"
+                android:orientation="horizontal" >
+
+                <!--  <Button
+                    android:id="@+id/bSocial"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:background="@drawable/b_social" />-->
+
+                <Button
+                    android:id="@+id/bTrack"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:background="@drawable/b_track" />
+
+                <Button
+                    android:id="@+id/bClub"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:background="@drawable/b_club" />
+
+                <Button
+                    android:id="@+id/bClear"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:background="@drawable/b_clear" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <com.google.android.maps.MapView
+            android:id="@+id/mapview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:apiKey="0nK08dth-VksEW7MjSWyLmikuadEnhmuxnMaXCA"
+            android:clickable="true"
+            android:enabled="true" />
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,7 @@
+
+<resources>
+    <color name="actionbar_title_color">#669900</color>
+    <color name="birdie_green_light">#99CC00</color>
+    <color name="birdie_green_bright">#669900</color>
+    <color name="birdie_green_dark">#669900</color>
+</resources>

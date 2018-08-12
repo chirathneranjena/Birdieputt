@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TabHost
+        android:id="@+id/tabhost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+            </TabWidget>
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <LinearLayout
+                    android:id="@+id/tab1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/whatsnew1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingTop="10dp"
+                        android:text="Long tap: Tap and hold for independent distances to various points on the map"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                    <TextView
+                        android:id="@+id/whatsnew2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingTop="10dp"
+                        android:text="Shot tracking: Record and analyze your golf shots (3 shots free)"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                    <TextView
+                        android:id="@+id/whatsnew3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingTop="10dp"
+                        android:text="Golf bag: A separate UI for your club set"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                    <TextView
+                        android:id="@+id/whatsnew4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingTop="10dp"
+                        android:text="Unlimited golf clubs with the option to choose which ones are currently in your bag"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                    <TextView
+                        android:id="@+id/whatsnew5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingTop="10dp"
+                        android:text="New and improved overall UI"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tab2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" >
+
+                    <ScrollView
+                        android:id="@+id/scrollView1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:id="@+id/tvhelp1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="5dp"
+                                android:paddingTop="10dp"
+                                android:text="Birdieputt™ is an android app that helps you improve your golf game. Users can use the app to judge distance to the pin and various other hazards around the golf course.  The app will also help you make a decision as to which club you should use for a particular shot, based on the distance estimate and course layout. It also includes a shot tracker which you can use to measure, record and analyze your golf shots."
+                                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                            <TextView
+                                android:id="@+id/tvhelp2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="5dp"
+                                android:paddingTop="10dp"
+                                android:text="The map view uses GPS to locate your current position on Google maps. Tap fast on any point on the map to measure the distance to that spot. You can use subsequent taps to estimate a layup etc. Click on the club (middle button) button to see which clubs are most relevant for that distance. If the distance is greater than the reach of any club in the set, the range for the club with the highest reach is displayed.  Use a longer tap to determine distances to points independent of each other (best for hazards etc.) You can personalize your club set and club reach by going to the golf bad in the main menu. The clear button will clear all taps and range overlays from the map."
+                                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                            <TextView
+                                android:id="@+id/tvhelp3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="5dp"
+                                android:paddingTop="10dp"
+                                android:text="Another button on the maps view is the shot tracker button. You can track your shot in two ways; with a target location and without. First tap on the shot tracker button. You current location and the target (if selected) will be highlighted. Take your shot, move to where the ball landed and tap on the button again. A dialog box will open displaying shot information with options to either track, forget or to refresh GPS location. The track button will take you to your club list and you can select which club you used to take the shot. The forget button forgets all records of the particular shot and refresh button will refresh the current GPS location in case it&apos;s not had time to catch up. If a target was marked then the shot tracker will remember distance, deviation angle and missed distance etc. If no target was marked only the shot distance is recorded."
+                                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                            <TextView
+                                android:id="@+id/tvhelp4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="5dp"
+                                android:paddingTop="10dp"
+                                android:text="The camera view enable users to estimate distance to the pin using your phone&apos;s camera. Point your phone at the pin and move the slider until the top and bottom lines aligns with the top and bottom of the pin.  To move the slider bars simply touch the round area of the top slider and slide it up and down the screen. If the pin is only partially visible, estimate the height using your intuition. The &apos;+&apos; and the &apos;-&apos; buttons will zoom in or zoom out the display if your phone supports this feature. This feature works best with mobile units having high resolution cameras with built-in zoom."
+                                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                            <TextView
+                                android:id="@+id/tvhelp5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="5dp"
+                                android:paddingTop="10dp"
+                                android:text="The golf bag view shows your club set. This view comes with a default set of clubs which you can modify. The + button on top allows you to add an additional club. The pencil button takes you to the edit view where you can edit the ranges of your clubs while the trash button deletes the club. Tapping on the club itself takes you to the club statistics view. This is where all the data from shot tracking is displayed."
+                                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                            <TextView
+                                android:id="@+id/tvhelp6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="5dp"
+                                android:paddingTop="10dp"
+                                android:text="The settings view allows you to a change the height of the pin (in the event of a non standard pin) for the camera view."
+                                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                            <TextView
+                                android:id="@+id/tvhelp7"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="5dp"
+                                android:paddingTop="10dp"
+                                android:text="The help view gets you here. The about view gives you information about the creators of this application"
+                                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                            <TextView
+                                android:id="@+id/tvhelp8"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="5dp"
+                                android:paddingTop="10dp"
+                                android:text="For more information visit our website at: http://birdieputt.98lumens.com"
+                                android:textAppearance="?android:attr/textAppearanceSmall" />
+                        </LinearLayout>
+                    </ScrollView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tab3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/knownissues1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingTop="10dp"
+                        android:text="On certain Motorola phones, sometimes the GPS will only show a blue circle (accuracy) without the blue shining (location mark). It may seem to happen only the first time the app is opened and sometimes randomly."
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                    <TextView
+                        android:id="@+id/knownissues2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingTop="10dp"
+                        android:text="Fix: Simply close and restart the app."
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                    <TextView
+                        android:id="@+id/knownissues3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingTop="10dp"
+                        android:text="This is a known issue that Motorola engineers are currently investigating."
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+
+</LinearLayout>
